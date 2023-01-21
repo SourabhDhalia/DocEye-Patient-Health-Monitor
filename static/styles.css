@@ -1,0 +1,109 @@
+body{
+	background: #f6f5f7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	margin: -20px 0 50px;
+}
+
+.container{
+	width:100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+header{
+	background-image: linear-gradient(to right,#17acba,#175b82);
+	border-bottom:rgb(68, 155, 255) 3px solid;
+	height:120px;
+	width:100%;
+	padding-top:30px;
+
+}
+
+.main-header{
+			text-align:center;
+			background-color: blue;
+			height:100px;
+			width:100%;
+			margin:0px;
+		}
+.brandname{
+	
+	font-size:10px;
+	color: #fff;
+	margin: 10px;
+	text-align:center;
+}
+
+header h2{
+
+	text-align:center;
+	color:#fff;
+	font-size:30px;
+
+}
+
+
+/* 
+.btn-info {
+	background-image: linear-gradient(to right,#166175,#176b82);
+	height:40px;
+	width:100px;
+	border-radius: 20px;
+} /* Blue */
+
+
+
+
+
+.btn-info {
+	border: 1px solid #FF4B2B;
+	background-color: #ff2600;
+	color: #000000;
+	font-size: 12px;
+	font-weight: bold;
+	border-radius: 20px;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+	height:40px;
+	width:100px;
+	transition: .3s ease-in-out;
+}
+.btn-info:hover {	
+
+	background-color: #ff0b0b;
+	color: #eee;
+	transform: scale(0.95);
+	transition: .3s ease-in-out;
+
+
+}
+.btn-info:active {
+	transform: scale(0.85);
+
+	background-color: #000000;
+	color: #ffffff;
+	transition: .3s ease-in-out;
+}
+
+.btn-info:focus {
+	outline: none;
+}
+
+.btn-info.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+}
+.btn-info.ghost:hover {	
+	background-color: transparent;
+	border-color: #FFFFFF;
+	transform: scale(0.95);
+	transition: .3s ease-in-out;
+
+}

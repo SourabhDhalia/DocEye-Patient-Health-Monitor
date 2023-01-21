@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+        
+  <link rel="shortcut icon" href="{{ url_for('static', filename='css and js/home css/13.png') }}" type="image/x-icon">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css and js/home css/demo.css') }}">
+        <title>PMONITOR.com</title>
+
+        <!-- python project -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.10.6/brython.min.js" integrity="sha512-LDmvEqUAHongGVdMnKgr2Wid1mkoi7gToSQQ8jO4DzO1s9nL9voMw1wqDOVEbjJQTgg2tWWtSRuty59RrA/Sew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.10.6/brython_stdlib.min.js" integrity="sha512-ckank4qLYTH9E8Ph913wJcp+B07VhZ9nxZNmaLl0kbsdKkY4vX/E9ahZm4FRdVDQv8YqWf3hiIrG8UMwUAVdfQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body onload="brython()">
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="box">
+
+          
+
+
+                        <div class="logo"><a href="/"><img src="{{ url_for('static', filename='css and js/home css/13.png') }}" alt="LOGO"style="height: 90px; float: left;">
+                            </a>
+
+                         
+                        </div>
+        
+            <ul class="nav-list" class="menu">
+
+
+                <li><a href="#home" class="nav-list-btn">Home</a></li>
+                <li><a href="#servies" class="nav-list-btn">Services</a>
+         
+                </li>
+
+                <li><a href="#about" class="nav-list-btn">About</a></li>
+                <li><a href="#contact" class="nav-list-btn">Contact us</a></li>
+          
+    <li> <a href="{{url_for('register')}}"class="nav-list-btn">Log out</a></li>
+
+            </ul>
+
+            <div class="nav-list-btn">
+                <i class="fas fa-bars"></i>
+
+            </div>
+        </div>
+
+    </nav>
+
+
+    <section class="home" id="home">
+        <div class="box">
+            <div class="hc">
+                <div class="text-1">Hi</div>
+                <div class="text-2">Welcome</div>
+                <div class="text-3">You should <span class="typing"></span></div>
+
+            </div>
+
+
+            <div class="end">
+                <div class="mouse">
+
+                </div>
+            </div>
+    </section>
+
+    <div>
+        <h1 id="why"> Why pmonitor.com </h1>
+        <p id="des"> We on the pmonitor.com are eager to help you to monitor patients that need care 24X7 .This site
+            allows doctors to monitor patients in varoius ways that is generally work of a nurse. By this nurse gets
+            some extra tiime too and can help with other patients in the hospital. </p>
+
+    </div>
+
+
+    <section class="Taj"  id="servies" >
+        <div class="about-section" >
+            <div class="inner-container">
+                <h1>Movement</h1>
+                <p class="tx1">
+                    This function allows the camera to capture the movement of the patient and report it their doctor.
+                    Only to be used for patients not expected to move(if they have been given a dose of morphine or are
+                    in coma). To be used in a position in which the patient is visible as it captures all movements.
+                </p>
+                <div class="skills">
+
+                 <!-- <a href="/python_test">python_test.py</a>   -->
+                      <button class="bt2"  style="border: 0px;"> <a href="/Motion_detection" class="bt2"
+                            style="text-align: center;">Use This</a> </button>
+
+                
+
+                </div>
+            </div>
+        </div>
+        <div class="about-section1">
+            <div class="inner-container1">
+                <h1>Eye detection</h1>
+                <p class="tx2">
+                    A function specifically used for eyes only. This function allows the camera to see the eyes and
+                    report to the doctor accordingly. The function can tell if the patient is drowsy, sleeping or awake
+                    . To used directly above patinet's eye or from a position where the eyes are clearly
+                    visible/</p>
+                <div class="skills1">
+
+                    <button class="bt2" onclick="popup()" style="border: 0px;"> <a href="/Face_model" class="bt2"
+                            style="text-align: center;">Use This</a> </button>
+                  
+
+                </div>
+            </div>
+        </div>
+        <div class="about-section2">
+            <div class="inner-container">
+                <h1>Body movement
+                </h1>
+                <p class="tx1">
+                    This function allows the camera to know if the patient has left the bed or not and act accordingly.
+                    To be used for patients that usually roams without permission(like in parkinsons). To be used from a
+                    position where the bed is clearly visible</p>
+                <div class="skills">
+
+                    <button class="bt2"  style="border: 0px;"> <a href="/" class="bt2"
+                            style="text-align: center;">Use This</a> </button>
+
+                
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+           
+   
+
+
+
+   
+
+    <div class="about-section" id="about">
+        <div class="inner-container">
+            <h1>About Us</h1>
+            <p class="tx1">
+                We are students of J.C.Bose UST , Faridabad , Haryana Btech Computer Engineering 4th year 7th semester
+                class : CE72 , Sourabh Dhalia and Shubham Garg .
+                We learn Frontend and Backend Both in Web Development and machine learning and this site is our Porject.
+                We have learned HTML, CSS, JAVA Sript, Flask, python ,SQLAlchemy etc in our journey </p>
+            <div class="skills">
+
+
+
+                <p class="sp" style="font-size: 14px; text-align: center;;"> | Sourabh Dhalia and Shubham Garg | Minor
+                    Porject |
+                    19001003127 and 19001003126 | CE72</p>
+
+
+
+                <script>
+                    var x = document.getElementsByClassName("sp")
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <section class="contact" id="contact">
+        <div class="box">
+            <h2 class="title">Contact us </h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">
+                        Get in Touch</div>
+                    <p>The site will allow the doctors to keep an eye onn their patients without actually being there
+                        with the help of deep learning. It will save the doctors their precious time and will help them
+                        focus on other cases too. It includes many models each for their own use .
+                    </p>
+
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">
+                                    Name</div>
+                                <div class="sub-title">
+                                    Sourabh Dhalia </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">
+                                    Address</div>
+                                <div class="sub-title">
+                                    J.C.Bose UST, YMCA, Faridabad, Haryana.</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">
+                                    Email</div>
+                                <div class="sub-title">
+                                    abc@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">
+                        Message us</div>
+                    <form action="https://formspree.io/f/xgedjbnr " method="POST" accept-charset="UTF-8">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" name="Name" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" name="Email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="Subject" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <changeit cols="30" rows="10" placeholder="Message.." required></changeit>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="feedback" id="feedback">
+        <input type="checkbox" id="mycheckbox">
+        <label for="mycheckbox" class="feedback-label">FEEDBACK</label>
+        <form class="form" action="https://formspree.io/f/mwkydjwd" method="POST" accept-charset="UTF-8">
+            <div>
+                <label for="fullname">Full Name</label>
+                <input type="text" name="name2" id="fullname" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email2" id="email" required>
+            </div>
+            <div>
+                <label for="comment">Comment</label>
+                <textarea id="comment" name="comment" required></textarea>
+            </div>
+            <div>
+                <button type="submit">Send</button>
+            </div>
+        </form>
+
+    </section>
+    
+    <script type="text/javascript" src="{{url_for('static',filename='css and js/home js/demo.js')}}"></script>
+    <footer>
+        <span>Created By <a href="#home">Sourabh Dhalia and Shubham Garg</a> | <span class="far fa-copyright"> |
+                www.pmonitor.com |</span> 2022 All rights reserved.</span>
+    </footer>
+</body>
+
+</html>

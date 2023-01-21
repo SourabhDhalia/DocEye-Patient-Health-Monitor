@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="static/lstyle.css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='css and js/login img/13.png') }}" type="image/x-icon">
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>signUp on PMONITOR.com</title>
+
+</head>
+
+<body>
+          <h1>Login Page</h1>    
+          <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <div class="container" id="container">
+                    <div class="form-container sign-up-container">
+    
+    <form method="POST" action="">
+   
+    <h1> Account</h1>
+        <span>or use your email for registration</span>
+        {{ form.hidden_tag() }}
+        {{ form.username }}
+        {{ form.password }}
+        <!-- {{ form.submit }} -->
+        <input type="submit" name="Sign In" class="btnsd" value="Sign In">
+        <a class="abtn"  href="{{ url_for('register') }}">Sign Up</a>
+        <!-- <a href="{{ url_for('register') }}">Don't have an account? Sign Up</a> -->
+    </form>
+</div> </div> </div>
+    
+       
+    
+    <script src="static/effect.js">
+    </script>
+    <div class="overlay-container">
+		<div class="overlay">
+			
+			<div class="overlay-panel overlay-right">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signUp">Sign In</button>
+			
+
+			</div>
+		</div>
+	</div>
+</div>
+	</div>
+    <footer>
+        <span>Created By <a href="/">Shiv && Sourabh Dhalia</a> |  <span >copyright &copy | www.PMONITOR.com |</span> 2020 All rights reserved.</span>
+    </footer>
+    <script type="text/javascript" src="{{url_for('static', filename='css and js/login js/effect.js')}}"></script>
+
+</body>
+
+</html>

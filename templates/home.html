@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <link rel="shortcut icon" href="{{ url_for('static', filename='css and js/login img/13.png') }}" type="image/x-icon">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css and js/login css/style.css') }}">
+
+
+    <title>Home</title>
+</head>
+
+<body>
+    <h1>Login Authentication System in Flask.</h1>
+    
+    <div class="overlay-container">
+		<div class="overlay">
+			
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
+                <a href="{{ url_for('register') }}">				<button class="ghost" id="signUp">Sign Up</button>
+                </a>
+			<a href="{{ url_for('login') }}">	<button  class="ghost" id="signIn">Sign In</button></a>
+
+			</div>
+		</div>
+	</div>
+
+    <footer>
+        <span>Created By <a href="/">Shiv && Sourabh Dhalia</a> |  <span >copyright &copy | www.PMONITOR.com |</span> 2020 All rights reserved.</span>
+    </footer>
+    <script type="text/javascript" src="{{url_for('static',filename='css and js/login js/effect.js')}}"></script>
+</body>
+
+</html>

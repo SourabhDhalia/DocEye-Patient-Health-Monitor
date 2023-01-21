@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='css and js/home css/13.png') }}" type="image/x-icon">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css and js/ML css/ml.css') }}">
+          <title>PMONITOR.com</title>
+</head>
+
+  <body>
+
+    <header>
+		<div class="container2">
+		<h2>Face Detection</h2>
+		<p class="brandname">Computer Vision App with Flask</p>
+		
+		
+		
+	</div>
+  </header>
+    <section>
+    <div class="container"  >
+        <div class="row">
+            <div class="col-lg-8  offset-lg-2">
+                <!-- <h3 class="mt-5">Live Streaming</h3> -->
+            <div style="justify-content: center; display: flex; margin: 10px; "> 
+                
+                 <img class="inner-container"  src="{{ url_for('video_feed') }}" width="100%" >
+
+            </div>
+        </div>  
+        </div>
+    </div>
+</section>
+    </body>
+
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='css and js/login img/13.png') }}" type="image/x-icon">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css and js/login css/style.css') }}">
+
+
+    <title>SignIn on PMONITOR.com</title>
+
+</head>
+
+<body>
+    <h1>Register Page</h1>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+    
+
+    <form method="POST" action="">
+    <h1>Create Account</h1>
+
+        {{ form.hidden_tag() }}
+        {{ form.username }}
+        {{ form.password }}
+        <!-- {{ form.submit }} -->
+        <input type="submit" name="Sign Up" class="btnsd" value="Sign Up">
+        <a class="abtn"  href="{{ url_for('login') }}">Log In</a>
+
+        <!-- <a href="{{ url_for('login') }}">Already have an account? Log In</a> -->
+
+    </form>
+
+    	</div>
+
+    <div class="overlay-container">
+		<div class="overlay">
+			
+			<div class="overlay-panel overlay-right">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			
+
+			</div>
+		</div>
+	</div>
+</div>
+	</div>
+    <footer>
+        <span>Created By <a href="/">Shiv && Sourabh Dhalia</a> |  <span >copyright &copy | www.PMONITOR.com |</span> 2020 All rights reserved.</span>
+    </footer>
+    <script type="text/javascript" src="{{url_for('static', filename='css and js/login js/effect.js')}}"></script>
+
+</body>
+
+</html>
