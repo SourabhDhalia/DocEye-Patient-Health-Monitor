@@ -2,6 +2,6 @@ flask
 opencv-python
 pickle
 twilio
-dlib
 imutils
 WTForms
+dlib
