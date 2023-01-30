@@ -1,6 +1,6 @@
 ## Python Flask DocEye-Patient-Health-Monitor
 
-This repository contains the code used in the Python Flask : DocEye or patient monitor [video]() uploaded on [my YouTube channel](https://www.youtube.com/channel/UCKHSnCVpvoXDh1OFzhTrHjA).
+This repository contains the code used in the Python Flask : DocEye or patient monitor [video](https://youtu.be/bEZBl1jSSVY) uploaded on [my YouTube channel](https://www.youtube.com/channel/UCKHSnCVpvoXDh1OFzhTrHjA).
 
 Create Twillio ID and add 
 
