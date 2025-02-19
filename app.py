@@ -21,6 +21,8 @@ from http import client
 from twilio.rest import Client
 import keys
 
+
+
 import time
 app = Flask(__name__)
 camera = cv2.VideoCapture("templates\9.mp4")
@@ -40,7 +42,9 @@ login_manager.login_view = 'login'
 
 @login_manager.user_loader
 def load_user(user_id):
+    print("test")
     return User.query.get(int(user_id))
+
 
 
 class User(db.Model, UserMixin):
