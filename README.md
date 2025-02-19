@@ -11,11 +11,14 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the req
 ##### Windows:
 ```zsh
 pip install -r requirements.txt 
+pip install pickle
 ```
 if dlib does not be installing using pip install dlib then use dlib-19.24.0.tar.gz file and install directly 
 ##### macOS/Linux:
 ```zsh
 pip3 install -r requirements.txt
+pip3 install pickle
+
 ```
 
 ## Usage
